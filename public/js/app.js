@@ -987,8 +987,7 @@ window.Vue = __webpack_require__(35);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('post', __webpack_require__(54));
-Vue.component('timeline', __webpack_require__(53));
+Vue.component('twitter', __webpack_require__(38));
 
 var app = new Vue({
   el: '#timeline'
@@ -42888,7 +42887,53 @@ exports.clearImmediate = clearImmediate;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(4)))
 
 /***/ }),
-/* 38 */,
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(39)
+/* script */
+var __vue_script__ = __webpack_require__(40)
+/* template */
+var __vue_template__ = __webpack_require__(41)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/Twitter.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-578155e8", Component.options)
+  } else {
+    hotAPI.reload("data-v-578155e8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
 /* 39 */
 /***/ (function(module, exports) {
 
@@ -42998,226 +43043,29 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 40 */,
-/* 41 */,
-/* 42 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(39)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(56)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/Timeline.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-40ef44f8", Component.options)
-  } else {
-    hotAPI.reload("data-v-40ef44f8", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(39)
-/* script */
-var __vue_script__ = __webpack_require__(57)
-/* template */
-var __vue_template__ = __webpack_require__(55)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/Post.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1695e957", Component.options)
-  } else {
-    hotAPI.reload("data-v-1695e957", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "col-md-4" }, [
-    _c("form", { attrs: { action: "#" }, on: { submit: _vm.postStatus } }, [
-      _c("div", { staticClass: "form-group" }, [
-        _c("textarea", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.post,
-              expression: "post"
-            }
-          ],
-          staticClass: "form-control",
-          attrs: {
-            rows: "5",
-            placeholder: "Cry about something...",
-            maxlength: "140",
-            required: ""
-          },
-          domProps: { value: _vm.post },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.post = $event.target.value
-            }
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("input", {
-        staticClass: "btn btn-default btn-block",
-        attrs: { type: "submit", value: "Post" }
-      })
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1695e957", module.exports)
-  }
-}
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "posts" },
-    _vm._l(_vm.posts, function(post) {
-      return _c("div", { staticClass: "media", attrs: { "track-by": "id" } }, [
-        _vm._m(0, true),
-        _vm._v(" "),
-        _c("div", { staticClass: "media-body" }, [
-          _c("div", { staticClass: "user" }, [
-            _c("a", { attrs: { href: "" } }, [
-              _c("strong", [_vm._v(_vm._s(post.user.username))])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("p", [_vm._v(_vm._s(post.body))])
-        ])
-      ])
-    })
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "media-left" }, [
-      _c("img", { staticClass: "media-object" })
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-40ef44f8", module.exports)
-  }
-}
-
-/***/ }),
-/* 57 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -43251,14 +43099,126 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 dataType: 'json',
                 data: {
                     'body': this.post
+                },
+                success: function success(data) {
+                    _this.post = '';
+                    _this.posts.unshift(data);
                 }
-            }).ajaxSuccess(function (data) {
-                _this.post = '';
-                _this.posts.unshift(data);
             });
         }
     }
 });
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "col-md-4" }, [
+      _c("form", { attrs: { action: "#" }, on: { submit: _vm.postStatus } }, [
+        _c("div", { staticClass: "form-group" }, [
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.post,
+                expression: "post"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: {
+              rows: "5",
+              placeholder: "Cry about something...",
+              maxlength: "140",
+              required: ""
+            },
+            domProps: { value: _vm.post },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.post = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "btn btn-default btn-block",
+          attrs: { type: "submit", value: "Post" }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-md-8" }, [
+      !_vm.posts.length
+        ? _c("p", [
+            _vm._v(
+              "No posts to see here yet. Follow someone to make it happen..."
+            )
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.posts.length
+        ? _c(
+            "div",
+            { staticClass: "posts" },
+            _vm._l(_vm.posts, function(post) {
+              return _c(
+                "div",
+                { staticClass: "media", attrs: { "track-by": "id" } },
+                [
+                  _c("div", { staticClass: "media-left" }, [
+                    _c("img", {
+                      staticClass: "media-object",
+                      staticStyle: { "border-radius": "100%" },
+                      attrs: { src: post.user.avatar }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "media-body" }, [
+                    _c("div", { staticClass: "user" }, [
+                      _c("a", { attrs: { href: post.user.profileUrl } }, [
+                        _c("strong", [_vm._v(_vm._s(post.user.username))])
+                      ]),
+                      _vm._v(
+                        " - " +
+                          _vm._s(post.humanCreatedAt) +
+                          "\n                    "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [_vm._v(_vm._s(post.body))])
+                  ])
+                ]
+              )
+            })
+          )
+        : _vm._e()
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-578155e8", module.exports)
+  }
+}
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

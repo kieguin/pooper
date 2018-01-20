@@ -16,5 +16,7 @@ Auth::routes();
 Route::middleware(['auth'])->group(function () {
     Route::get('/', 'TimelineController@index')->name('timeline');
     Route::post('/posts', 'PostController@create')->name('post');
+
+    Route::get('/u/{user}', 'UserController@index')->name('user.profile');
 });
 
