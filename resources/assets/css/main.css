@@ -30,6 +30,10 @@ input {
     @apply .text-indigo .border-indigo;
 }
 
+.hero {
+    background: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-615925.png');
+}
+
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still

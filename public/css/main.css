@@ -533,6 +533,10 @@ input {
   border-color: #6574cd;
 }
 
+.hero {
+  background: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-615925.png');
+}
+
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still
@@ -2562,6 +2566,10 @@ input {
   height: 16rem;
 }
 
+.h-112 {
+  height: 28rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -2620,6 +2628,10 @@ input {
 
 .m-8 {
   margin: 2rem;
+}
+
+.m-24 {
+  margin: 6rem;
 }
 
 .m-auto {
@@ -2698,6 +2710,16 @@ input {
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.mx-24 {
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
 .my-auto {
@@ -2832,6 +2854,22 @@ input {
   margin-left: 2rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mr-24 {
+  margin-right: 6rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.ml-24 {
+  margin-left: 6rem;
+}
+
 .mt-auto {
   margin-top: auto;
 }
@@ -2960,6 +2998,10 @@ input {
   margin: -2rem;
 }
 
+.-m-24 {
+  margin: -6rem;
+}
+
 .-m-px {
   margin: -1px;
 }
@@ -3032,6 +3074,16 @@ input {
 .-mx-8 {
   margin-left: -2rem;
   margin-right: -2rem;
+}
+
+.-my-24 {
+  margin-top: -6rem;
+  margin-bottom: -6rem;
+}
+
+.-mx-24 {
+  margin-left: -6rem;
+  margin-right: -6rem;
 }
 
 .-my-px {
@@ -3156,6 +3208,22 @@ input {
   margin-left: -2rem;
 }
 
+.-mt-24 {
+  margin-top: -6rem;
+}
+
+.-mr-24 {
+  margin-right: -6rem;
+}
+
+.-mb-24 {
+  margin-bottom: -6rem;
+}
+
+.-ml-24 {
+  margin-left: -6rem;
+}
+
 .-mt-px {
   margin-top: -1px;
 }
@@ -3254,6 +3322,10 @@ input {
   padding: 2rem;
 }
 
+.p-24 {
+  padding: 6rem;
+}
+
 .p-px {
   padding: 1px;
 }
@@ -3326,6 +3398,16 @@ input {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .py-px {
@@ -3448,6 +3530,22 @@ input {
 
 .pl-8 {
   padding-left: 2rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pr-24 {
+  padding-right: 6rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pl-24 {
+  padding-left: 6rem;
 }
 
 .pt-px {
@@ -6530,6 +6628,10 @@ input {
     height: 16rem;
   }
 
+  .sm\:h-112 {
+    height: 28rem;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -6588,6 +6690,10 @@ input {
 
   .sm\:m-8 {
     margin: 2rem;
+  }
+
+  .sm\:m-24 {
+    margin: 6rem;
   }
 
   .sm\:m-auto {
@@ -6666,6 +6772,16 @@ input {
   .sm\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .sm\:my-24 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .sm\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .sm\:my-auto {
@@ -6800,6 +6916,22 @@ input {
     margin-left: 2rem;
   }
 
+  .sm\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .sm\:mr-24 {
+    margin-right: 6rem;
+  }
+
+  .sm\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .sm\:ml-24 {
+    margin-left: 6rem;
+  }
+
   .sm\:mt-auto {
     margin-top: auto;
   }
@@ -6928,6 +7060,10 @@ input {
     margin: -2rem;
   }
 
+  .sm\:-m-24 {
+    margin: -6rem;
+  }
+
   .sm\:-m-px {
     margin: -1px;
   }
@@ -7000,6 +7136,16 @@ input {
   .sm\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
+  }
+
+  .sm\:-my-24 {
+    margin-top: -6rem;
+    margin-bottom: -6rem;
+  }
+
+  .sm\:-mx-24 {
+    margin-left: -6rem;
+    margin-right: -6rem;
   }
 
   .sm\:-my-px {
@@ -7124,6 +7270,22 @@ input {
     margin-left: -2rem;
   }
 
+  .sm\:-mt-24 {
+    margin-top: -6rem;
+  }
+
+  .sm\:-mr-24 {
+    margin-right: -6rem;
+  }
+
+  .sm\:-mb-24 {
+    margin-bottom: -6rem;
+  }
+
+  .sm\:-ml-24 {
+    margin-left: -6rem;
+  }
+
   .sm\:-mt-px {
     margin-top: -1px;
   }
@@ -7222,6 +7384,10 @@ input {
     padding: 2rem;
   }
 
+  .sm\:p-24 {
+    padding: 6rem;
+  }
+
   .sm\:p-px {
     padding: 1px;
   }
@@ -7294,6 +7460,16 @@ input {
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sm\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .sm\:py-px {
@@ -7416,6 +7592,22 @@ input {
 
   .sm\:pl-8 {
     padding-left: 2rem;
+  }
+
+  .sm\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .sm\:pr-24 {
+    padding-right: 6rem;
+  }
+
+  .sm\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .sm\:pl-24 {
+    padding-left: 6rem;
   }
 
   .sm\:pt-px {
@@ -10476,6 +10668,10 @@ input {
     height: 16rem;
   }
 
+  .md\:h-112 {
+    height: 28rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -10534,6 +10730,10 @@ input {
 
   .md\:m-8 {
     margin: 2rem;
+  }
+
+  .md\:m-24 {
+    margin: 6rem;
   }
 
   .md\:m-auto {
@@ -10612,6 +10812,16 @@ input {
   .md\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .md\:my-24 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .md\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .md\:my-auto {
@@ -10746,6 +10956,22 @@ input {
     margin-left: 2rem;
   }
 
+  .md\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .md\:mr-24 {
+    margin-right: 6rem;
+  }
+
+  .md\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .md\:ml-24 {
+    margin-left: 6rem;
+  }
+
   .md\:mt-auto {
     margin-top: auto;
   }
@@ -10874,6 +11100,10 @@ input {
     margin: -2rem;
   }
 
+  .md\:-m-24 {
+    margin: -6rem;
+  }
+
   .md\:-m-px {
     margin: -1px;
   }
@@ -10946,6 +11176,16 @@ input {
   .md\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
+  }
+
+  .md\:-my-24 {
+    margin-top: -6rem;
+    margin-bottom: -6rem;
+  }
+
+  .md\:-mx-24 {
+    margin-left: -6rem;
+    margin-right: -6rem;
   }
 
   .md\:-my-px {
@@ -11070,6 +11310,22 @@ input {
     margin-left: -2rem;
   }
 
+  .md\:-mt-24 {
+    margin-top: -6rem;
+  }
+
+  .md\:-mr-24 {
+    margin-right: -6rem;
+  }
+
+  .md\:-mb-24 {
+    margin-bottom: -6rem;
+  }
+
+  .md\:-ml-24 {
+    margin-left: -6rem;
+  }
+
   .md\:-mt-px {
     margin-top: -1px;
   }
@@ -11168,6 +11424,10 @@ input {
     padding: 2rem;
   }
 
+  .md\:p-24 {
+    padding: 6rem;
+  }
+
   .md\:p-px {
     padding: 1px;
   }
@@ -11240,6 +11500,16 @@ input {
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .md\:py-px {
@@ -11362,6 +11632,22 @@ input {
 
   .md\:pl-8 {
     padding-left: 2rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .md\:pr-24 {
+    padding-right: 6rem;
+  }
+
+  .md\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .md\:pl-24 {
+    padding-left: 6rem;
   }
 
   .md\:pt-px {
@@ -14422,6 +14708,10 @@ input {
     height: 16rem;
   }
 
+  .lg\:h-112 {
+    height: 28rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -14480,6 +14770,10 @@ input {
 
   .lg\:m-8 {
     margin: 2rem;
+  }
+
+  .lg\:m-24 {
+    margin: 6rem;
   }
 
   .lg\:m-auto {
@@ -14558,6 +14852,16 @@ input {
   .lg\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .lg\:my-24 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .lg\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .lg\:my-auto {
@@ -14692,6 +14996,22 @@ input {
     margin-left: 2rem;
   }
 
+  .lg\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .lg\:mr-24 {
+    margin-right: 6rem;
+  }
+
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .lg\:ml-24 {
+    margin-left: 6rem;
+  }
+
   .lg\:mt-auto {
     margin-top: auto;
   }
@@ -14820,6 +15140,10 @@ input {
     margin: -2rem;
   }
 
+  .lg\:-m-24 {
+    margin: -6rem;
+  }
+
   .lg\:-m-px {
     margin: -1px;
   }
@@ -14892,6 +15216,16 @@ input {
   .lg\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
+  }
+
+  .lg\:-my-24 {
+    margin-top: -6rem;
+    margin-bottom: -6rem;
+  }
+
+  .lg\:-mx-24 {
+    margin-left: -6rem;
+    margin-right: -6rem;
   }
 
   .lg\:-my-px {
@@ -15016,6 +15350,22 @@ input {
     margin-left: -2rem;
   }
 
+  .lg\:-mt-24 {
+    margin-top: -6rem;
+  }
+
+  .lg\:-mr-24 {
+    margin-right: -6rem;
+  }
+
+  .lg\:-mb-24 {
+    margin-bottom: -6rem;
+  }
+
+  .lg\:-ml-24 {
+    margin-left: -6rem;
+  }
+
   .lg\:-mt-px {
     margin-top: -1px;
   }
@@ -15114,6 +15464,10 @@ input {
     padding: 2rem;
   }
 
+  .lg\:p-24 {
+    padding: 6rem;
+  }
+
   .lg\:p-px {
     padding: 1px;
   }
@@ -15186,6 +15540,16 @@ input {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .lg\:py-px {
@@ -15308,6 +15672,22 @@ input {
 
   .lg\:pl-8 {
     padding-left: 2rem;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .lg\:pr-24 {
+    padding-right: 6rem;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .lg\:pl-24 {
+    padding-left: 6rem;
   }
 
   .lg\:pt-px {
@@ -18368,6 +18748,10 @@ input {
     height: 16rem;
   }
 
+  .xl\:h-112 {
+    height: 28rem;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
@@ -18426,6 +18810,10 @@ input {
 
   .xl\:m-8 {
     margin: 2rem;
+  }
+
+  .xl\:m-24 {
+    margin: 6rem;
   }
 
   .xl\:m-auto {
@@ -18504,6 +18892,16 @@ input {
   .xl\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .xl\:my-24 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .xl\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .xl\:my-auto {
@@ -18638,6 +19036,22 @@ input {
     margin-left: 2rem;
   }
 
+  .xl\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .xl\:mr-24 {
+    margin-right: 6rem;
+  }
+
+  .xl\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .xl\:ml-24 {
+    margin-left: 6rem;
+  }
+
   .xl\:mt-auto {
     margin-top: auto;
   }
@@ -18766,6 +19180,10 @@ input {
     margin: -2rem;
   }
 
+  .xl\:-m-24 {
+    margin: -6rem;
+  }
+
   .xl\:-m-px {
     margin: -1px;
   }
@@ -18838,6 +19256,16 @@ input {
   .xl\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
+  }
+
+  .xl\:-my-24 {
+    margin-top: -6rem;
+    margin-bottom: -6rem;
+  }
+
+  .xl\:-mx-24 {
+    margin-left: -6rem;
+    margin-right: -6rem;
   }
 
   .xl\:-my-px {
@@ -18962,6 +19390,22 @@ input {
     margin-left: -2rem;
   }
 
+  .xl\:-mt-24 {
+    margin-top: -6rem;
+  }
+
+  .xl\:-mr-24 {
+    margin-right: -6rem;
+  }
+
+  .xl\:-mb-24 {
+    margin-bottom: -6rem;
+  }
+
+  .xl\:-ml-24 {
+    margin-left: -6rem;
+  }
+
   .xl\:-mt-px {
     margin-top: -1px;
   }
@@ -19060,6 +19504,10 @@ input {
     padding: 2rem;
   }
 
+  .xl\:p-24 {
+    padding: 6rem;
+  }
+
   .xl\:p-px {
     padding: 1px;
   }
@@ -19132,6 +19580,16 @@ input {
   .xl\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .xl\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .xl\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .xl\:py-px {
@@ -19254,6 +19712,22 @@ input {
 
   .xl\:pl-8 {
     padding-left: 2rem;
+  }
+
+  .xl\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .xl\:pr-24 {
+    padding-right: 6rem;
+  }
+
+  .xl\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .xl\:pl-24 {
+    padding-left: 6rem;
   }
 
   .xl\:pt-px {
