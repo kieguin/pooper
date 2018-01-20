@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Tweeter\Http\Controllers;
 
-use App\Post;
+use Tweeter\Post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller

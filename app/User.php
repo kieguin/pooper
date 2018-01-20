@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Tweeter;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -24,7 +24,7 @@ class User extends Authenticatable
 
     public function posts()
     {
-        return $this->hasMany('App\Post');
+        return $this->hasMany('Tweeter\Post');
     }
 
     public function getAvatar()
@@ -73,11 +73,11 @@ class User extends Authenticatable
 
     public function following()
     {
-        return $this->belongsToMany('App\User', 'follows', 'user_id', 'follower_id');
+        return $this->belongsToMany('Tweeter\User', 'follows', 'user_id', 'follower_id');
     }
 
     public function followers()
     {
-        return $this->belongsToMany('App\User', 'follows', 'follower_id', 'user_id');
+        return $this->belongsToMany('Tweeter\User', 'follows', 'follower_id', 'user_id');
     }
 }
