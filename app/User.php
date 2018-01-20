@@ -2,12 +2,13 @@
 
 namespace Tweeter;
 
+use Laravel\Scout\Searchable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, Searchable;
 
     protected $fillable = [
         'username', 'email', 'password',
@@ -29,7 +30,7 @@ class User extends Authenticatable
 
     public function getAvatar()
     {
-        return 'https://www.gravatar.com/avatar/' . md5($this->email) . '?s=45&d=mm';
+        return 'https://www.gravatar.com/avatar/' . md5($this->email) . '?s=45&d=identicon';
     }
 
     public function getAvatarAttribute()

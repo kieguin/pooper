@@ -16,7 +16,8 @@ window.Vue = require('vue');
  */
 
 Vue.component('twitter', require('./components/Twitter.vue'));
+Vue.component('search-users', require('./components/Search.vue'));
 
 const app = new Vue({
-    el: '#timeline'
+    el: '#app'
 });

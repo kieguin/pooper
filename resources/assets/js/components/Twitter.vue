@@ -5,7 +5,7 @@
                 <div class="form-group">
                     <textarea class="form-control" rows="5" placeholder="Cry about something..." maxlength="140" required v-model="post"></textarea>
                 </div>
-                <input type="submit" value="Post" class="btn btn-default btn-block">
+                <button type="submit" class="btn btn-default btn-block"><i class="fal fa-plus"></i> Post</button>
             </form>
         </div>
         <div class="col-md-8">

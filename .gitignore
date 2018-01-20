@@ -1,5 +1,8 @@
 /node_modules
 /public/hot
+/public/webfonts
+/public/css/fontawesome-all.css
+/public/css/fontawesome-all.min.css
 /public/storage
 /storage/*.key
 /vendor

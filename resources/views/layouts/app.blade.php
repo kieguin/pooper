@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/asika32764/vue2-animate/master/dist/vue2-animate.min.css">
+    <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -30,7 +30,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <i class="fal fa-poo"></i> {{ config('app.name', 'Tweeter') }}
                     </a>
                 </div>
 
@@ -40,6 +40,8 @@
                         &nbsp;
                     </ul>
 
+                    <search-users></search-users>
+
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
@@ -47,6 +49,7 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                                     {{ Auth::user()->username }} <span class="caret"></span>
