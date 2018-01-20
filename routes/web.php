@@ -16,7 +16,10 @@ Auth::routes();
 Route::middleware(['auth'])->group(function () {
     Route::get('/', 'TimelineController@index')->name('timeline');
     Route::post('/posts', 'PostController@create')->name('post');
+    Route::get('/posts', 'PostController@index');
 
     Route::get('/u/{user}', 'UserController@index')->name('user.profile');
+    Route::get('/u/{user}/follow', 'UserController@follow')->name('user.follow');
+    Route::get('/u/{user}/unfollow', 'UserController@unFollow')->name('user.unfollow');
 });
 

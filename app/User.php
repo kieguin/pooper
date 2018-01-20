@@ -46,4 +46,38 @@ class User extends Authenticatable
     {
         return 'username';
     }
+
+    public function isNotMe(User $user)
+    {
+        return $this->id !== $user->id;
+    }
+
+    public function isFollowing(User $user)
+    {
+        return (bool) $this->following->where('id', $user->id)->count();
+    }
+
+    public function canFollow(User $user)
+    {
+        if (!$this->isNotMe($user)) {
+            return false;
+        }
+
+        return !$this->isFollowing($user);
+    }
+
+    public function canUnfollow(User $user)
+    {
+        return $this->isFollowing($user);
+    }
+
+    public function following()
+    {
+        return $this->belongsToMany('App\User', 'follows', 'user_id', 'follower_id');
+    }
+
+    public function followers()
+    {
+        return $this->belongsToMany('App\User', 'follows', 'follower_id', 'user_id');
+    }
 }

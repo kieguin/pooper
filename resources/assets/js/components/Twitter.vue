@@ -11,7 +11,7 @@
         <div class="col-md-8">
             <p v-if="!posts.length">No posts to see here yet. Follow someone to make it happen...</p>
             <div class="posts" v-if="posts.length">
-                <div class="media" v-for="post in posts" track-by="id">
+                <div class="media" v-for="post in posts" track-by="id" transition="expand">
                     <div class="media-left">
                         <img style="border-radius: 100%;" class="media-object" v-bind:src="post.user.avatar">
                     </div>
@@ -23,6 +23,8 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <a v-if="total > posts.length" href="#" class="btn btn-default btn-sm" v-on:click="getMorePosts($event)">Load More</a>
         </div>
     </div>
 </template>
@@ -32,7 +34,9 @@
         data () {
             return {
                 post: '',
-                posts: []
+                posts: [],
+                limit: 20,
+                total: 0
             }
         },
 
@@ -52,7 +56,61 @@
                         this.posts.unshift(data);
                     }
                 });
+            },
+            getPosts () {
+                $.ajax({
+                    url: '/posts',
+                    dataType: 'json',
+                    type: 'get',
+                    data: {
+                        limit: this.limit
+                    },
+                    success: (data) => {
+                        this.posts = data.posts;
+                        this.total = data.total;
+                    }
+                });
+            },
+            getMorePosts (e) {
+                e.preventDefault();
+                this.limit = this.limit + this.limit;
+                this.getPosts();
             }
+        },
+
+        mounted() {
+            this.getPosts();
+            setInterval(() => {
+                this.getPosts();
+            },10000);
         }
     }
 </script>
+
+<style lang="scss">
+    .expand {
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    .expand-transition {
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .expand-enter, .expand-leave {
+        height: 0;
+        padding: 0 20px;
+        opacity: 0;
+    }
+</style>
