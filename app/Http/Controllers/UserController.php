@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Tweeter\Http\Controllers;
 
-use App\User;
+use Tweeter\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
